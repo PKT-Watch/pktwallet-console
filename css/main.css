@@ -1,0 +1,207 @@
+:root {
+  --color-light: #fff;
+  --color-medium: #bdd3cc;
+  --color-dark: #0f282f;
+  --color-error: #9a1e1e;
+  --color-highlight: #00d37f;
+  --color-button-hover: #01be72;
+  --color-border: #91aaa2;
+  --sidebar-width: 260px ;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) auto;
+  grid-template-rows: 50px auto;
+  height: 100vh;
+}
+
+.btn-primary {
+  background: var(--color-highlight);
+  border-color: var(--color-highlight);
+  color: inherit;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+.btn-primary.disabled {
+  background: var(--color-highlight);
+  border-color: var(--color-highlight);
+  color: inherit;
+}
+.btn-primary:active, .btn-primary:focus {
+  background: var(--color-highlight);
+  border-color: var(--color-highlight);
+  color: inherit;
+  outline: none;
+  box-shadow: none;
+}
+.btn-primary:hover {
+  background: var(--color-button-hover);
+  border-color: var(--color-button-hover);
+}
+
+.header {
+  grid-column: 1/3;
+  background: #000;
+  color: #FFF;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.header .logo {
+  display: block;
+  width: var(--sidebar-width);
+  height: 60px;
+  background: linear-gradient(135deg, rgb(15, 40, 47) 0%, rgb(15, 40, 47) 25%, rgb(1, 71, 81) 25%, rgb(1, 71, 81) 50%, rgb(0, 211, 127) 50%, rgb(0, 211, 127) 75%, rgb(175, 249, 200) 75%, rgb(175, 249, 200) 94%);
+  margin-right: 1rem;
+}
+
+.menu-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  border: 1px solid var(--color-border);
+}
+.menu-item + .menu-item {
+  border-top: none;
+}
+.menu-item button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+.menu-item button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+.menu-item button.active {
+  background: var(--color-highlight);
+}
+.menu-item button:nth-child(2) {
+  margin-left: auto;
+}
+.menu-item button .icon {
+  font-size: 18px;
+  display: block;
+  margin-left: auto;
+}
+
+.output {
+  overflow: auto;
+  white-space: pre-wrap;
+  padding: 1rem;
+}
+.output::before {
+  position: sticky;
+  top: 0;
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.panel-help {
+  background: var(--color-medium);
+}
+.panel-help::before {
+  content: "Help";
+  background: #FFF;
+}
+
+.panel-error {
+  background: var(--color-error);
+  color: white;
+  display: none;
+}
+.panel-error::before {
+  content: "Error";
+  background: #FFF;
+  color: var(--color-error);
+}
+.has-error .panel-error {
+  display: block;
+}
+
+.panel-parameters {
+  white-space: normal;
+}
+.panel-parameters::before {
+  content: "Parameters";
+  background: var(--color-medium);
+}
+.panel-parameters .btn-add-parameter {
+  background: none;
+  border: 2px dashed #e6e6e6;
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+
+.panel-response {
+  background: var(--color-dark);
+  color: #FFF;
+}
+.panel-response::before {
+  content: "Response";
+  background: #F2F2F2;
+  color: var(--color-dark);
+}
+
+.panels {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  height: 100%;
+  overflow: hidden;
+}
+.panels > div:nth-child(1) {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  height: 100%;
+  overflow: hidden;
+}
+.has-error .panels > div:nth-child(1) {
+  grid-template-rows: auto auto 1fr 25vh;
+}
+.panels > div:nth-child(2) {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.panel-controls {
+  padding: 1rem;
+  border-top: 1px solid #e6e6e6;
+}
+
+.parameter-input {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+.parameter-input .form-control {
+  margin: 0;
+}
+
+.sidebar {
+  background: var(--color-medium);
+  padding: 1rem;
+}
+.sidebar::before {
+  content: "Commands";
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 1rem;
+  background: #FFF;
+  text-transform: uppercase;
+}/*# sourceMappingURL=main.css.map */

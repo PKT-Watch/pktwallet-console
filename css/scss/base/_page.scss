@@ -1,0 +1,6 @@
+.page {
+    display: grid;
+    grid-template-columns: var(--sidebar-width) auto;
+    grid-template-rows: 50px auto;
+    height: 100vh;
+}

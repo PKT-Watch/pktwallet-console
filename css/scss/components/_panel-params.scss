@@ -1,0 +1,18 @@
+.panel-parameters {
+    white-space: normal;
+
+    &::before {
+        content: "Parameters";
+        background: var(--color-medium);
+    }
+
+    .btn-add-parameter {
+        background: none;
+        border: 2px dashed #e6e6e6;
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+        padding: .5rem;
+        text-transform: uppercase;
+    }
+}

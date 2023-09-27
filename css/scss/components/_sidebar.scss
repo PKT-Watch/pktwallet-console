@@ -1,0 +1,13 @@
+.sidebar {
+    background: var(--color-medium);
+    padding: 1rem;
+
+    &::before {
+        content: "Commands";
+        display: block;
+        padding: 5px 10px;
+        margin-bottom: 1rem;
+        background: #FFF;
+        text-transform: uppercase;
+    }
+}

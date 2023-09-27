@@ -1,0 +1,15 @@
+.panel-error {
+    background: var(--color-error);
+    color: white;
+    display: none;
+
+    &::before {
+        content: "Error";
+        background: #FFF;
+        color: var(--color-error);
+    }
+
+    .has-error & {
+        display: block;
+    }
+}

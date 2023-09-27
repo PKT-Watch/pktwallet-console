@@ -1,0 +1,8 @@
+.panel-help {
+    background: var(--color-medium);
+
+    &::before {
+        content: "Help";
+        background: #FFF;
+    }
+}

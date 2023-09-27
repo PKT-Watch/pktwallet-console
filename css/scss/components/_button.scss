@@ -1,0 +1,26 @@
+.btn-primary {
+    background: var(--color-highlight);
+    border-color: var(--color-highlight);
+    color: inherit;
+    text-transform: uppercase;
+    border-radius: 0;
+
+    &.disabled {
+        background: var(--color-highlight);
+        border-color: var(--color-highlight);
+        color: inherit;
+    }
+
+    &:active, &:focus {
+        background: var(--color-highlight);
+        border-color: var(--color-highlight);
+        color: inherit;
+        outline: none;
+        box-shadow: none;
+    }
+
+    &:hover {
+        background: var(--color-button-hover);
+        border-color: var(--color-button-hover);
+    }
+}

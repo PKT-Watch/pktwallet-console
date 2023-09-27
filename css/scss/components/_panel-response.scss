@@ -1,0 +1,10 @@
+.panel-response {
+    background: var(--color-dark);
+    color: #FFF;
+
+    &::before {
+        content: "Response";
+        background: #F2F2F2;
+        color: var(--color-dark);
+    }
+}

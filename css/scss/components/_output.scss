@@ -1,0 +1,14 @@
+.output {
+    overflow: auto;
+    white-space: pre-wrap;
+    padding: 1rem;
+
+    &::before {
+        position: sticky;
+        top: 0;
+        display: block;
+        padding: 5px 10px;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+    }
+}
