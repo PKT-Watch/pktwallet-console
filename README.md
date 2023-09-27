@@ -17,11 +17,15 @@ An experimental browser based UI for interacting with the pktwallet JSON-RPC ser
 
 2. Clone this repository and navigate to the `node-rest-api` directory.
 3. Open `app.js` in an editor and update the `rpcUser` and `rpcPass` constants to match the values used in step 1.
-4. Start up the API
+4. Build the application
+
+   ```npm install```
+   
+5. Start up the API
    
    ```node app.js```
 
-5. Open `index.html` in your web browser.
+6. Open `index.html` in your web browser.
 
 # How to use
 
