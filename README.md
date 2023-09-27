@@ -30,6 +30,6 @@ An experimental browser based UI for interacting with the pktwallet JSON-RPC ser
 # How to use
 
 1. Select a command from the list to view the documentation. The documentation specifies any required parameters and their type.
-2. Use the `Parameters` panel to add any paraeters.
+2. Use the `Parameters` panel to add any parameters.
 3. Press the `Execute Command` button to issue the command to pktwallet.
     
