@@ -8,6 +8,7 @@ const panelParametersEl = document.querySelector('.panel-parameters');
 const parameterInputsEl = document.querySelector('.parameter-inputs');
 const btnAddParameter = document.querySelector('.btn-add-parameter');
 const btnExecute = document.querySelector('#btn-execute');
+
 let selectedMethod;
 let includeParams;
 
@@ -83,17 +84,21 @@ function getHelp(method) {
 }
 
 menu.addEventListener('click', e => {
-    if (e.target && e.target.tagName == 'BUTTON') {
-        selectedMethod = e.target.dataset.method;
-        includeParams = (typeof e.target.dataset.params != 'undefined' && e.target.dataset.params == 'true');
+    if (e.target.closest('[data-method]')) {
+        const button = e.target.closest('[data-method]');
+        selectedMethod = button.dataset.method;
+        includeParams = (typeof button.dataset.params != 'undefined' && button.dataset.params == 'true');
 
-        menuButtons.forEach(button => button.classList.remove('active'));
-        e.target.classList.add('active');
+        menuButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
 
         prepareOutput();
 
         btnExecute.classList.remove('disabled');
         getHelp(selectedMethod);
+    } else if (e.target.closest('#btn-expand-menu')) {
+        menu.classList.toggle('expanded');
+        e.target.closest('#btn-expand-menu').textContent = menu.classList.contains('expanded') ? '⇲⇱' : '⇱⇲'; 
     }
 });
 

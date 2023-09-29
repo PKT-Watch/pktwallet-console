@@ -1,5 +1,6 @@
 .menu {
-    //
+    height: calc(100% - var(--header-height));
+    overflow: auto;
 }
 
 .menu-item {
@@ -13,13 +14,26 @@
     }
 
     button {
-        display: flex;
+        display: block;
         align-items: center;
         background: none;
         border: none;
         padding: .5rem;
         text-align: left;
         transition: all .2s ease;
+        font-size: 0;
+        color: rgba(0, 0, 0, .6);
+
+        .expanded & {
+            font-size: 1rem;
+        }
+
+        &::before {
+            content: attr(data-method);
+            display: block;
+            font-size: 1rem;
+            color: #000;
+        }
         
         &:hover {
             background: rgba(0,0,0,.1);

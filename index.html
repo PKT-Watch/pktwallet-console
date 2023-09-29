@@ -13,107 +13,114 @@
         <header class="header"><span class="logo"></span> pktwallet console</header>
         <div class="sidebar">
             <div class="menu">
-                <div class="menu-item">
-                    <button data-method="addmultisigaddress" data-params="true">addmultisigaddress</button>
+                <div class="title-bar">
+                    Commands
+                    <button id="btn-expand-menu">⇱⇲</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="addp2shscript" data-params="true">addp2shscript</button>
+                    <button data-method="addmultisigaddress" data-params="true">Add multisig address</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="addwitnessaddress" data-params="true">addwitnessaddress</button>
+                    <button data-method="addp2shscript" data-params="true">Add p2sh script</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="createmultisig" data-params="true">createmultisig</button>
+                    <button data-method="addwitnessaddress" data-params="true">Add witness address</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="createtransaction" data-params="true">createtransaction</button>
+                    <button data-method="createmultisig" data-params="true">Create multisig</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="dumpprivkey" data-params="true">dumpprivkey</button>
+                    <button data-method="createtransaction" data-params="true">Create transaction</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="getaddressbalances" data-params="true">getaddressbalances</button>
+                    <button data-method="dumpprivkey" data-params="true">Dump priv key</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="getbalance" data-params="true">getbalance</button>
+                    <button data-method="getaddressbalances" data-params="true">Get address balances</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="getinfo">getinfo</button>
+                    <button data-method="getbalance" data-params="true">Get balance</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="getnetworkstewardvote" data-params="true">getnetworkstewardvote</button>
+                    <button data-method="getinfo">Get info</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="getnewaddress" data-params="true">getnewaddress</button>
+                    <button data-method="getnetworkstewardvote" data-params="true">Get network steward vote</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="getreceivedbyaddress" data-params="true">getreceivedbyaddress</button>
+                    <button data-method="getnewaddress" data-params="true">Get new address</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="getsecret" data-params="true">getsecret</button>
+                    <button data-method="getreceivedbyaddress" data-params="true">Get received by address</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="gettransaction" data-params="true">gettransaction</button>
+                    <button data-method="getsecret" data-params="true">Get secret</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="getwalletseed" data-params="true">getwalletseed</button>
+                    <button data-method="gettransaction" data-params="true">Get transaction</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="importprivkey" data-params="true">importprivkey</button>
+                    <button data-method="getwalletseed" data-params="true">Get wallet seed</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="listlockunspent">listlockunspent</button>
+                    <button data-method="importprivkey" data-params="true">Import priv key</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="listreceivedbyaddress" data-params="true">listreceivedbyaddress</button>
+                    <button data-method="listlockunspent">List lock unspent</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="listsinceblock" data-params="true">listsinceblock</button>
+                    <button data-method="listreceivedbyaddress" data-params="true">List received by address</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="listtransactions" data-params="true">listtransactions</button>
+                    <button data-method="listsinceblock" data-params="true">List since block</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="listunspent" data-params="true">listunspent</button>
+                    <button data-method="listtransactions" data-params="true">List transactions</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="lockunspent" data-params="true">lockunspent</button>
+                    <button data-method="listunspent" data-params="true">List unspent</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="resync" data-params="true">resync</button>
+                    <button data-method="lockunspent" data-params="true">Lock unspent</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="sendfrom" data-params="true">sendfrom</button>
+                    <button data-method="resync" data-params="true">Resync</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="sendmany" data-params="true">sendmany</button>
+                    <button data-method="sendfrom" data-params="true">Send from</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="sendtoaddress" data-params="true">sendtoaddress</button>
+                    <button data-method="sendmany" data-params="true">Send many</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="setnetworkstewardvote" data-params="true">setnetworkstewardvote</button>
+                    <button data-method="sendtoaddress" data-params="true">Send to address</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="settxfee" data-params="true">settxfee</button>
+                    <button data-method="setnetworkstewardvote" data-params="true">Set network steward vote</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="signmessage" data-params="true">signmessage</button>
+                    <button data-method="settxfee" data-params="true">Set tx fee</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="signrawtransaction" data-params="true">signrawtransaction</button>
+                    <button data-method="signmessage" data-params="true">Sign message</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="stopresync">stopresync</button>
+                    <button data-method="signrawtransaction" data-params="true">Sign raw transaction</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="walletlock">walletlock</button>
+                    <button data-method="stopresync">Stop resync</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="walletmempool" data-params="true">walletmempool</button>
+                    <button data-method="walletlock">Wallet lock</button>
                 </div>
                 <div class="menu-item">
-                    <button data-method="walletpassphrase" data-params="true">walletpassphrase</button>
+                    <button data-method="walletmempool" data-params="true">Wallet mempool</button>
+                </div>
+                <div class="menu-item">
+                    <button data-method="walletpassphrase" data-params="true">Wallet passphrase</button>
+                </div>
+                <div class="menu-item">
+                    <button data-method="walletpassphrasechange" data-params="true">Wallet passphrase change</button>
                 </div>
             </div>
             
