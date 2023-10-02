@@ -110,6 +110,7 @@ btnAddParameter.addEventListener('click', e => {
                 <option value="string">string</option>
                 <option value="numeric">numeric</option>
                 <option value="array">array</option>
+                <option value="boolean">boolean</option>
             </select>
         </div>
     `);
@@ -129,6 +130,12 @@ function getParameters() {
                 params.push(parseInt(el.value));
             } else if (argType == 'array') {
                 params.push(JSON.parse(el.value));
+            } else if (argType == 'boolean') {
+                if (el.value == 'true') {
+                    params.push(true);
+                } else {
+                    params.push(false);
+                }
             } else {
                 params.push(el.value);
             }
